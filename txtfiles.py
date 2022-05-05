@@ -49,19 +49,19 @@ class TextFiles:
 
         age_path = "C:\OneDrive\Documents\.School\Code\PycharmProjects\ccs-survey-console\extfiles\age.txt"
         if os.path.exists(age_path):
-            age_path = open(age_path, "a")
-            age_path.write(self._age)
+            f_age = open(age_path, "a")
+            f_age.write(self._age)
 
         sex_path = "C:\OneDrive\Documents\.School\Code\PycharmProjects\ccs-survey-console\extfiles\sex.txt"
         if os.path.exists(sex_path):
-            sex_path = open(sex_path, "a")
-            sex_path.write(self._sex)
+            f_sex = open(sex_path, "a")
+            f_sex.write(self._sex)
 
         course_path = "C:\OneDrive\Documents\.School\Code\PycharmProjects\ccs-survey-console\extfiles\course.txt"
         if os.path.exists(course_path):
-            course_path = open(course_path, "a")
-            course_path.write(self._course)
+            f_course = open(course_path, "a")
+            f_course.write(self._course)
 
         stats_path = "C:\OneDrive\Documents\.School\Code\PycharmProjects\ccs-survey-console\extfiles\stats.txt"
         if os.path.exists(stats_path):
-            stats_path = open(stats_path, "a")
+            stats_path = open(stats_path, "w")
